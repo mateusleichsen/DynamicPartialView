@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DynamicPartialView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KiY-ae-mUj">
+                                <rect key="frame" x="16" y="40" width="343" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Z4S-k8-6wc"/>
+                                </constraints>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlD-Du-x9n">
+                                <rect key="frame" x="156" y="174" width="63" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZLg-gI-8fi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YlD-Du-x9n" firstAttribute="top" secondItem="KiY-ae-mUj" secondAttribute="bottom" constant="6" id="6Zf-tN-PDa"/>
+                            <constraint firstItem="KiY-ae-mUj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8jH-Dm-3Yf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KiY-ae-mUj" secondAttribute="trailing" constant="16" id="dqk-46-W7z"/>
+                            <constraint firstItem="YlD-Du-x9n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="thh-CE-SH1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YlD-Du-x9n" secondAttribute="trailing" constant="156" id="v46-cS-xMm"/>
+                            <constraint firstItem="KiY-ae-mUj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="vht-RF-Aj7"/>
+                            <constraint firstItem="YlD-Du-x9n" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wmd-ik-iCj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="KiY-ae-mUj" id="UhN-hY-bmq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="-109"/>
+        </scene>
+        <!--Main Embed View Controller-->
+        <scene sceneID="MPm-Ib-Aol">
+            <objects>
+                <viewController storyboardIdentifier="MainEmbedViewController" id="cWW-Tr-92m" customClass="MainEmbedViewController" customModule="DynamicPartialView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7hv-K2-vy9">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MainEmbed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzs-6T-NcN">
+                                <rect key="frame" x="69.5" y="40" width="204.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.55177253484725952" green="0.91688662767410278" blue="0.57139319181442261" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="hzs-6T-NcN" firstAttribute="centerX" secondItem="7hv-K2-vy9" secondAttribute="centerX" id="cbq-kQ-zcF"/>
+                            <constraint firstItem="hzs-6T-NcN" firstAttribute="centerY" secondItem="7hv-K2-vy9" secondAttribute="centerY" id="iyg-32-5jq"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="343" height="128"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dn1-jE-i4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="-352"/>
+        </scene>
+        <!--ViewTwo-->
+        <scene sceneID="QCF-Et-shn">
+            <objects>
+                <viewController storyboardIdentifier="TwoEmbedViewController" title="ViewTwo" id="mz6-qU-MnX" customClass="TwoEmbedViewController" customModule="DynamicPartialView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bEH-0z-ob5">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBG-hG-YJg">
+                                <rect key="frame" x="136" y="40" width="71" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91532009840011597" green="0.81624490022659302" blue="0.52275043725967407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="JBG-hG-YJg" firstAttribute="centerY" secondItem="bEH-0z-ob5" secondAttribute="centerY" id="CYh-lS-NmY"/>
+                            <constraint firstItem="JBG-hG-YJg" firstAttribute="centerX" secondItem="bEH-0z-ob5" secondAttribute="centerX" id="Yqd-IK-Riq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XAj-nc-Rc4"/>
+                    </view>
+                    <size key="freeformSize" width="343" height="128"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SvK-QX-s5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="26"/>
+        </scene>
+        <!--Three Embed View Controller-->
+        <scene sceneID="fjp-sR-4kx">
+            <objects>
+                <viewController storyboardIdentifier="ThreeEmbedViewController" id="UNx-US-fFY" customClass="ThreeEmbedViewController" customModule="DynamicPartialView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q5a-Sy-y5v">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Three" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGY-dx-NKT">
+                                <rect key="frame" x="122" y="40" width="99" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91776949167251587" green="0.6152837872505188" blue="0.5410313606262207" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="cGY-dx-NKT" firstAttribute="centerY" secondItem="Q5a-Sy-y5v" secondAttribute="centerY" id="fUF-2v-ceF"/>
+                            <constraint firstItem="cGY-dx-NKT" firstAttribute="centerX" secondItem="Q5a-Sy-y5v" secondAttribute="centerX" id="iMH-sT-35I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f7c-JQ-6Kb"/>
+                    </view>
+                    <size key="freeformSize" width="343" height="128"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6dt-WD-Xoc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="223"/>
+        </scene>
+        <!--One Embed View Controller-->
+        <scene sceneID="I7l-GG-APG">
+            <objects>
+                <viewController storyboardIdentifier="OneEmbedViewController" id="rar-lm-zQr" customClass="OneEmbedViewController" customModule="DynamicPartialView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dyl-pH-N3G">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDT-n5-dKZ">
+                                <rect key="frame" x="135.5" y="40" width="72" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78922706842422485" green="0.91126078367233276" blue="0.519939124584198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="NDT-n5-dKZ" firstAttribute="centerX" secondItem="Dyl-pH-N3G" secondAttribute="centerX" id="6Um-3f-HPA"/>
+                            <constraint firstItem="NDT-n5-dKZ" firstAttribute="centerY" secondItem="Dyl-pH-N3G" secondAttribute="centerY" id="hk5-L4-6cq"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="374" height="667"/>
+                    <size key="freeformSize" width="343" height="128"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RlV-K2-DKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="-165"/>
+        </scene>
+    </scenes>
+</document>
