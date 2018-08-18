@@ -17,6 +17,7 @@
 		90257A49212682B500EB3240 /* TwoEmbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90257A48212682B500EB3240 /* TwoEmbedViewController.swift */; };
 		90257A4B212773AB00EB3240 /* ThreeEmbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90257A4A212773AB00EB3240 /* ThreeEmbedViewController.swift */; };
 		90257A4D2127942200EB3240 /* SubViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90257A4C2127942100EB3240 /* SubViewManager.swift */; };
+		90257A5221279F5700EB3240 /* PartialViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90257A5021279F5700EB3240 /* PartialViews.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		90257A48212682B500EB3240 /* TwoEmbedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoEmbedViewController.swift; sourceTree = "<group>"; };
 		90257A4A212773AB00EB3240 /* ThreeEmbedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeEmbedViewController.swift; sourceTree = "<group>"; };
 		90257A4C2127942100EB3240 /* SubViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewManager.swift; sourceTree = "<group>"; };
+		90257A5121279F5700EB3240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DynamicPartialView/Base.lproj/PartialViews.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				90257A48212682B500EB3240 /* TwoEmbedViewController.swift */,
 				90257A4A212773AB00EB3240 /* ThreeEmbedViewController.swift */,
 				90257A082125A06A00EB3240 /* Main.storyboard */,
+				90257A5021279F5700EB3240 /* PartialViews.storyboard */,
 				90257A0B2125A06D00EB3240 /* Assets.xcassets */,
 				90257A0D2125A06D00EB3240 /* LaunchScreen.storyboard */,
 				90257A102125A06D00EB3240 /* Info.plist */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90257A0F2125A06D00EB3240 /* LaunchScreen.storyboard in Resources */,
+				90257A5221279F5700EB3240 /* PartialViews.storyboard in Resources */,
 				90257A0C2125A06D00EB3240 /* Assets.xcassets in Resources */,
 				90257A0A2125A06A00EB3240 /* Main.storyboard in Resources */,
 			);
@@ -177,6 +181,14 @@
 				90257A0E2125A06D00EB3240 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		90257A5021279F5700EB3240 /* PartialViews.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90257A5121279F5700EB3240 /* Base */,
+			);
+			name = PartialViews.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

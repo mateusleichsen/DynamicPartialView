@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  DynamicPartialView
 //
-//  Created by Tiago Leichsenring on 16.08.18.
+//  Created by Mateus Leichsenring on 16.08.18.
 //  Copyright © 2018 Mateus Leichsenring. All rights reserved.
 //
 
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        subViewManager = SubViewManager(storyboardName: "Main", parentView: containerView, parentViewController: self)
+        subViewManager = SubViewManager(storyboardName: "PartialViews", parentView: containerView, parentViewController: self)
         subViewManager.updateView(nextViewController: mainEmbedViewController)
     }
 

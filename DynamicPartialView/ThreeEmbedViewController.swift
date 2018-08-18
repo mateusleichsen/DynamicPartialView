@@ -2,7 +2,7 @@
 //  ThreeViewController.swift
 //  DynamicPartialView
 //
-//  Created by Tiago Leichsenring on 17.08.18.
+//  Created by Mateus Leichsenring on 17.08.18.
 //  Copyright © 2018 Mateus Leichsenring. All rights reserved.
 //
 

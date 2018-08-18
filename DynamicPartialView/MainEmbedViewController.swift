@@ -2,7 +2,7 @@
 //  MainEmbedViewController.swift
 //  DynamicPartialView
 //
-//  Created by Tiago Leichsenring on 16.08.18.
+//  Created by Mateus Leichsenring on 16.08.18.
 //  Copyright © 2018 Mateus Leichsenring. All rights reserved.
 //
 
