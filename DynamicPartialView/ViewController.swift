@@ -39,14 +39,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func nextTapped(_ sender: Any) {
-        updateView(currentIndex, parentView: containerView)
+        updateView(currentIndex)
         currentIndex += 1
         if currentIndex == 4 {
             currentIndex = 0
         }
     }
     
-    private func updateView(_ index:Int, parentView:UIView) {
+    private func updateView(_ index:Int) {
         switch index {
         case 0:
             subViewManager.updateView(nextViewController: mainEmbedViewController)
